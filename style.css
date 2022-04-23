@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    text-align: center;
+}
+
+.canvas {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px){
+    .canvas {
+        width: 70%;
+    }  
+}
+
+@media (max-width: 400px){
+    .canvas {
+        width: 100%;
+    }  
+}
+.timer {
+    max-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timerInput {
+    width: 100%;
+    border: none;
+    font-size: 3rem;
+    font-family: inherit;
+    text-align: center;
+    background: transparent;
+}
+
+#timerInput:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border: 1px solid blue;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.play-btn {
+    background: url('./images/play.svg');
+    background-position: 51% 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.stop {
+    background: url('./images/pause.svg');
+    background-position: 51% 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.reset-btn {
+    background: url('./images/reset.svg');
+    background-position: 51% 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
